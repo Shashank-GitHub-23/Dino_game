@@ -15,15 +15,15 @@
  
 }
 
-#block{
+.block{
     height: 70px;
     width: 50px;
     background-color: brown;
     border: 3px solid rgb(255, 255, 255);
     position: relative;
+    left: 650px;
     top: 430px;
-    /* margin-left: 650px; */
-    /* animation: move 2s linear infinite; */
+    animation: move 10s linear infinite;
 
 }
 
@@ -37,10 +37,10 @@
 
 @keyframes move {
   0%{
-    left: 0px;
+    left: 650px;
   }
     100%{
-        left: -650px;
+        left: 0px;
     }
 
 }
@@ -58,7 +58,7 @@
     display: none;
 }
 
-.button{
+.btn{
     margin-top: 2px;
     padding: 10px;
     border-radius: 1px;
