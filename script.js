@@ -1,4 +1,4 @@
-var dino = document.getElementById("dino");
+var dino = document.getElementById("character");
 var block = document.getElementById("block");
 var result = document.getElementById("result");
 var score = document.getElementById("score");
@@ -16,14 +16,13 @@ window.addEventListener('keydown' , jump);
 window.addEventListener('click', jump);
 
 setInterval(function gameOver(){
-    var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("margin"));
+    var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var dinoTop = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
-    // console.log(blockLeft);
-    // console.log(dinoTop);
     if((blockLeft < 52) && (dinoTop > 302) ){
-result.style.display = "block";
-// game.style.display = "none";
-score.innerHTML = `Score: ${count}`;
+    result.style.display = "block";
+    block.style.animationPlayState = "paused"; 
+    // game.style.display = "none";
+    score.innerHTML = `Score: ${count}`;
     }
 },10);
 

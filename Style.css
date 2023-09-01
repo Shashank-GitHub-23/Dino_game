@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.main-box{
+#game{
     
     background-image: url(bg.png);
     background-size: cover;
@@ -12,6 +12,7 @@
     border: 5px solid black;
     margin: auto;
     margin-top: 100px;
+    
  
 }
 
@@ -23,11 +24,13 @@
     position: relative;
     left: 650px;
     top: 430px;
-    animation: move 10s linear infinite;
+    animation: move 1s linear infinite;
+   
+   
 
 }
 
-.dino{
+#character{
     height: 50px;
     position: relative;
     top: 375px;
