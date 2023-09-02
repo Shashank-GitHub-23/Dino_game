@@ -4,6 +4,7 @@ let result = document.getElementById("result");
 let score = document.getElementById("score");
 let game = document.getElementById("game");
 let count= 0;
+let sound = document.getElementById("sound");
 
 function jump(){
     dino.style.top = "290px";
@@ -11,6 +12,7 @@ function jump(){
      dino.style.top = "376px";
     },400)
     count++;
+    sound.play();
 }
 window.addEventListener('keydown' , jump);
 window.addEventListener('click', jump);
